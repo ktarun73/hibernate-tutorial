@@ -1,0 +1,17 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/myhibernate</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">root</property>
+        <property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
+        <property name="hbm2ddl.auto">update</property>   <!--> create for creating table again and insert value if table already exist then delete it and create again and insert value, update for to insert value to table if exist , if not then create new table and then insert<!-->
+        <property name="show_sql">true</property>
+        <mapping class="com.hib.Student"/>
+        <mapping class="com.hib.Address"/>
+    </session-factory>
+</hibernate-configuration>
