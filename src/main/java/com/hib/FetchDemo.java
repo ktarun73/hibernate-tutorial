@@ -16,8 +16,8 @@ public class FetchDemo {
         Student student1= session.get(Student.class,2);
         System.out.println(student1);
 
-//        Address address=session.get(Address.class,1);
-//        System.out.println(address.getStreet());
+        Address address=session.get(Address.class,1);
+        System.out.println(address.getStreet());
 
 
 
