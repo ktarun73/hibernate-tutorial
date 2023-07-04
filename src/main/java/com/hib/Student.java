@@ -7,7 +7,7 @@ public class Student {
 
     @Id
     private int id;
-    @Column(name = "Name" , nullable = false)
+
     private String name;
     private String city;
 
